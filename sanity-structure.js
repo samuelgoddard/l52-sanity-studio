@@ -6,10 +6,7 @@ import {
   FiEye,
   FiUsers,
   FiCamera,
-  FiMail,
-  FiSun,
-  FiSmile,
-  FiBriefcase
+  FiMail
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -41,6 +38,8 @@ export default () =>
       S.listItem().title('Home').child(S.editor().id('home').schemaType('home').documentId('singleton-home').views(getPreview('home'))).icon(FiHome),
       S.divider(),
       S.listItem().title('About').child(S.editor().id('about').schemaType('about').documentId('singleton-about').views(getPreview('about'))).icon(FiEye),
+      S.divider(),
+      S.listItem().title('Clients').child(S.documentTypeList('clients').title('Clients')).icon(FiUsers),
       S.divider(),
       S.listItem().title('Work').child(S.documentTypeList('work').title('Work')).icon(FiCamera),
       S.divider(),

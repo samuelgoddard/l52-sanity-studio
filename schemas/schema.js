@@ -7,6 +7,7 @@ import singletonContact from './singletonContact'
 
 import work from './work'
 import categories from './categories'
+import clients from './clients'
 
 import seo from './common/seo'
 import service from './common/service'
@@ -19,6 +20,7 @@ export default createSchema({
     singletonContact,
     work,
     categories,
+    clients,
     seo,
     service
   ]),
