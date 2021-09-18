@@ -89,5 +89,18 @@ export default {
       name: 'seo',
       type: 'seo'
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: 'title',
+      client: 'client'
+    },
+    prepare(selection) {
+      const {title, client} = selection
+      return {
+        title: title,
+        subtitle: client
+      }
+    }
+  }
 }
