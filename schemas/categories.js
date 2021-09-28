@@ -24,6 +24,12 @@ export default {
         slugify: (input) => slugify(`${input}`)
       },
       validation: Rule => Rule.required()
-    }
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
   ]
 }
