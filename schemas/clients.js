@@ -20,6 +20,12 @@ export default {
       name: 'logo',
       type: "image",
       validation: Rule => Rule.required()
-    }
+    },
+    {
+      title: "Link",
+      name: "link",
+      description: 'Optionally add a link to this client',
+      type: "url",
+    },
   ]
 }
