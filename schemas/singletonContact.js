@@ -35,8 +35,39 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Address',
+      title: 'Address 1 Title',
+      name: 'addressTitle',
+      type: 'string', 
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address 1 Image',
+      name: 'addressImage',
+      type: "image",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address 1',
       name: 'address',
+      type: 'array', 
+      of: [{type: 'block'}],
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address 2 Title',
+      name: 'address2Title',
+      type: 'string', 
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address 2 Image',
+      name: 'address2Image',
+      type: "image",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address 2',
+      name: 'address2',
       type: 'array', 
       of: [{type: 'block'}],
       validation: Rule => Rule.required()
