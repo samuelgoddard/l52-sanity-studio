@@ -54,6 +54,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Address 1 Email',
+      name: 'addressEmail',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Address 2 Title',
       name: 'address2Title',
       type: 'string', 
@@ -70,6 +76,12 @@ export default {
       name: 'address2',
       type: 'array', 
       of: [{type: 'block'}],
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address 2 Email',
+      name: 'address2Email',
+      type: 'string',
       validation: Rule => Rule.required()
     },
     {
