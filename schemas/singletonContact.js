@@ -85,6 +85,31 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Address 3 Title',
+      name: 'address3Title',
+      type: 'string', 
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address 3 Image',
+      name: 'address3Image',
+      type: "image",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address 3',
+      name: 'address3',
+      type: 'array', 
+      of: [{type: 'block'}],
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address 3 Email',
+      name: 'address3Email',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Instagram',
       name: 'instagram',
       type: 'url',
